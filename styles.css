@@ -1,5 +1,9 @@
 
-
+body{
+    background-color: #ffffff;
+    font-family: Montserrat;
+    
+}
 
 a {
     color: #8b943b;
@@ -9,25 +13,37 @@ a {
     display: flex; 
     flex-flow: column;
     align-items: center; 
-    border-style: solid;
-    border-color: red;
+    align-content: center;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    color:  #85837d;
+    border-color: #c1502e; 
+    margin: 5%;
+    padding-top: 3%;
+    font-size: 0.85rem;
+    height: 15em;
+
+
 }
 .community-text{
     display: flex; 
     align-items: center; 
+    color: #85837d;
 }
 .contact-us{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    border-style: solid;
+    
     
 }
 
 .contact-us-text{
     display: flex;
     flex-direction: column;
-    align-content: center;
+    justify-content: left;
 }
 .contact-us-button{
     display: flex;
@@ -48,9 +64,13 @@ a {
 
 }
 
-
+.sign-up{
+    margin-left: 15%;
+    margin-top: 5px; 
+}
 .sign-up-text{
     margin-right: 5%;
+    margin-top: 3px;
 
 }
 

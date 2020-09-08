@@ -1,17 +1,60 @@
 
 
 
-
-
-
-
-
 a {
     color: #8b943b;
     text-decoration: none;
 }
+.join-community{
+    display: flex; 
+    flex-flow: column;
+    align-items: center; 
+    border-style: solid;
+    border-color: red;
+}
+.community-text{
+    display: flex; 
+    align-items: center; 
+}
+.contact-us{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    border-style: solid;
+    
+}
 
-.footer-container{
+.contact-us-text{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.contact-us-button{
+    display: flex;
+    flex-flow: row wrap; 
+    align-items: center; 
+    background-color: #cab577;
+    border-style: none;
+    color: #c1502e;
+    border-radius: 4px;
+    transition: 0.1s;
+    padding: 0 2px 0 2px;
+}
+.contact-us-button:hover {
+    
+    background: #c1502e;
+    border-radius: 4px;
+    transition: 0.1s;
+
+}
+
+
+.sign-up-text{
+    margin-right: 5%;
+
+}
+
+.footer-container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -27,27 +70,27 @@ a {
 }
 
 
-.mobile-app{
+.mobile-app {
     display: flex;
     flex-direction: column;
 }
 
-.community{
+.community {
     display: flex;
     flex-direction: column;
 }
 
-.contact{
+.contact {
     display: flex;
     flex-direction: column;
 }
 
-.logo-footer{
+.logo-footer {
     display: flex;
     flex-direction: column;
 }
 
-.impressum{
+.impressum {
     display: flex;
     flex-direction: column;
 }  

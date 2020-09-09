@@ -9,6 +9,98 @@ a {
     color: #8b943b;
     text-decoration: none;
 }
+
+/**
+h3{
+    display: flex;
+    align-items: center;
+    color: #85837d;
+
+} */
+
+.Favourite-recipes-week{
+    display: flex; 
+    flex-flow: column;
+    align-items: center; 
+    align-content: center;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    color:  #85837d;
+    border-color: #c1502e; 
+    margin: 5%;
+    padding-top: 3%;
+    font-size: 0.85rem;
+    height: 35em;
+}
+
+.Favourite-recipes-top-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.favourite-recipe-bottom-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 2em;
+}
+
+.favourite-container-one{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 25%;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 15%;
+    padding-bottom: 1em;
+    box-shadow: 0px 6px 5px #cab577;
+
+}
+
+.favourite-container-two{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    border-style: solid; 
+    width: 27%;
+    border-width: 1px;
+    border-radius: 15%;
+    padding-bottom: 1em;
+    box-shadow: 0px 6px 5px #cab577;
+}
+
+.favourite-container-three{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    width: 25%;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 15%;
+    padding-bottom: 1em;
+    box-shadow: 0px 6px 5px #cab577;
+
+}
+
+
+.favourite-container-text{
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    overflow-wrap: break-word;
+} 
+.food-images{
+    border-radius: 20%;
+
+}
+
 .join-community{
     display: flex; 
     flex-flow: column;
@@ -55,6 +147,8 @@ a {
     border-radius: 4px;
     transition: 0.1s;
     padding: 0 2px 0 2px;
+    box-shadow: 0px 6px 5px #cab577;
+   
 }
 .contact-us-button:hover {
     

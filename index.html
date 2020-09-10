@@ -4,17 +4,136 @@
 <head>
     <meta charset = "UTF-8">
     <meta name = "description" content = "Blog">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet"  type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+    
     <title> Cook Book </title>
-    <link rel="stylesheet"  type="text/css" href="style.css">
     
 
-
 </head>
+        <!-- Header -->
+    <div class="header">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" <a href="index.html"><img src="https://cdn.discordapp.com/attachments/749979744853950516/752845448204648508/1.png" alt="Henchal logo"></a>
+            </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">HOME</a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">RECIPES<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Colombian Recipes</a></li>
+                            <li><a href="#">Ghanaian Recipes</a></li>
+                            <li><a href="#">Nigerian Recipes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">COOKING GUIDES</a></li>
+                    <li><a href="#">COMMUNITY</a></li>
+                    </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
 
-<body>
-<header>  
+<body>          
+ <!-- Test-->
+    <div class="section">
+        <div class="transparent-header-spacer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="banner-headline-alt">
+                        <h3>Best recipes in the world</h3>
+                        <span>Find the best recipes around the globe</span>
+                    </div>
+                    <!-- Button -->
+                    <div class="intro-subscribe-button">
+                        <button class="button ripple-effect" onclick="window.location.href='#'">Subscribe Today</button>
+                    </div>
+                </div>
+            </div>
+        <!-- Button Ends-->
+    
+            <!-- Stats -->
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="intro-stats margin-top-45 hide-under-992px">
+                        <li>
+                            <strong class="counter">1,586</strong>
+                            <span>Colombian Recipes</span>
+                        </li>
+                        <li>
+                            <strong class="counter">3,543</strong>
+                            <span>Ghanaian Recipes</span>
+                        </li>
+                        <li>
+                            <strong class="counter">1,232</strong>
+                            <span>Nigerian Recipes</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
-</header>
+
+    <div class="video-container">
+        <video autoplay loop muted>
+            <source src="https://cdn.discordapp.com/attachments/749979744853950516/753335435421548660/1771583858.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- International Recipes-->
+    <div class="section margin-top-65 margin-bottom-65">
+	    <div class="container">
+		    <div class="row">
+
+                <!-- Section Headline -->
+			    <div class="col-xl-12">
+				    <div class="section-headline centered margin-top-0 margin-bottom-45">
+					    <h3>International Recipes</h3>
+				    </div>
+                </div>
+            
+			    <div class="col-xl-3 col-md-6">
+				    <a href="#" class="photo-box" data-background-image="E:\WBS Coding\project videos\featured-img-of-post-153230">
+					    <div class="photo-box-content">
+						    <h3>Colombia</h3>
+						    <span>1,586 Columbian Recipes</span>
+					    </div>
+				    </a>
+                </div>
+            
+			    <div class="col-xl-3 col-md-6">
+				<!-- Photo Box -->
+				    <a href="#" class="photo-box" data-background-image="#">
+					    <div class="photo-box-content">
+						    <h3>Ghana</h3>
+						    <span>3,543 Ghanaian Recipes</span>
+					    </div>
+				    </a>
+                </div>
+                        
+			    <div class="col-xl-3 col-md-6">
+				<!-- Photo Box -->
+				    <a href="#" class="photo-box" data-background-image="#">
+					    <div class="photo-box-content">
+						    <h3>Nigeria</h3>
+						    <span>1,232 Nigerian Recipes</span>
+					    </div>
+				    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- International Recipes / End -->
+
+
+
 
 
 <main>
@@ -31,10 +150,11 @@
 
 
 </footer>
-
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 </body>
-
 
 
 

@@ -27,7 +27,7 @@ body {
 	width: auto;
 	height: 30px;
 	flex-direction: row;
-	border-bottom: 10px solid blue;
+	border-bottom: 10px solid #c1502e;
 	font-family: ;
 }
 
@@ -44,7 +44,7 @@ ul {
 
 li {
 	color: #fff;
-	background: blue;
+	background: #cab577;
 	display: block;
 	float: left;
 	padding: 1rem;
@@ -58,7 +58,7 @@ li a {
 }
 
 li:hover {
-	background: red;
+	background: #cab577;
 	cursor: pointer;
 }
 
@@ -105,64 +105,59 @@ ul li ul li {
 .transparent-header #header .right-side { background-color: transparent; }
 
 
-/* Intro Stats */
-.intro-stats {
-	flex-direction: row;
-	background: #fff;
-	padding: 20px;
-	border-radius: 20px;
-	box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-	justify-content: center;
-}
 
-.intro-stats li {
-	display: flex;
-	flex-direction: row;
-	margin: 0 0 10px 0;
-	padding: 0 0 10px 0;
-	border: none;
-	border-bottom: 1px solid #eee;
-	width: 250px;
-	align-self: center;
-	text-align: center;
-}
-
-.intro-stats li:last-child {
-	margin-bottom: 0;
-	padding-bottom: 0;
-	border: none;
-}
-
-/* Video */
-
-
-.section {
+/* Test video*/
+header {
 	position: relative;
+	background-color: black;
+	height: 75vh;
+	min-height: 25rem;
 	width: 100%;
-	height: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	overflow: hidden;
-}
-
-.section h1 {
-	text-align: center;
-	font-size: 6rem;
-	font-family: "Cookie";
-	padding: 20px;
-	margin: 15px;
-	z-index: 1;
-	opacity: 0.7;
-}
-
-.video-container {
+  }
+  
+  header video {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: 0;
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+  }
+  
+  header .container {
+	position: relative;
+	z-index: 2;
+  }
+  
+  header .overlay {
 	position: absolute;
 	top: 0;
 	left: 0;
+	height: 100%;
 	width: 100%;
-	background-size: cover;
-}
+	background-color: black;
+	opacity: 0.5;
+	z-index: 1;
+  }
+  
+  @media (pointer: coarse) and (hover: none) {
+	header {
+	  background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+	}
+	header video {
+	  display: none;
+	}
+  }
+
+  /* Test vido ends*/
+
 
 /* ---------------------------------- */
 /* Photo Box
@@ -176,7 +171,7 @@ ul li ul li {
 	background-position: 100%;
 	box-shadow: 0 3px 10px rgba(0,0,0,0.2);
 	transition: 0.4s;
-	margin: 0 0 25px 0;
+	margin: 20 0 25px 0;
 }
 
 .photo-box:before {
@@ -207,12 +202,12 @@ ul li ul li {
 .photo-box-content span {
 	color: #333;
 	background: #fff;
-	border-radius: 4px;
+	border-radius: 10px;
 	font-size: 15px;
 	font-weight: 500;
 	padding:  4px 10px;
 	line-height: 20px;
-	margin-top: 8px;
+	margin-top: 20px;
 	display: inline-block;
 }
 
@@ -227,3 +222,18 @@ ul li ul li {
 	opacity: 0.95;
 }
 
+/*--Map Container--*/
+
+.map-container-6{
+	overflow:hidden;
+	padding-bottom:56.25%;
+	position:relative;
+	height:0;
+	}
+	.map-container-6 iframe{
+	left:0;
+	top:0;
+	height:100%;
+	width:100%;
+	position:absolute;
+	}

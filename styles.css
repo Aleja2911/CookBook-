@@ -1,3 +1,24 @@
+
+
+body{
+    background-color: #ffffff;
+    font-family: Montserrat;
+    
+}
+
+a {
+    color: #8b943b;
+    text-decoration: none;
+}
+
+/**
+h3{
+    display: flex;
+    align-items: center;
+    color: #85837d;
+
+} */
+
 @charset "UTF-8";
 
 /*
@@ -237,3 +258,201 @@ header {
 	width:100%;
 	position:absolute;
 	}
+
+.Favourite-recipes-week{
+    display: flex; 
+    flex-flow: column;
+    align-items: center; 
+    align-content: center;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    color:  #85837d;
+    border-color: #c1502e; 
+    margin: 5%;
+    padding-top: 3%;
+    font-size: 0.85rem;
+    height: 35em;
+}
+
+.Favourite-recipes-top-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.favourite-recipe-bottom-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 2em;
+}
+
+.favourite-container-one{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 25%;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 15%;
+    padding-bottom: 1em;
+    box-shadow: 0px 6px 5px #cab577;
+
+}
+
+.favourite-container-two{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    border-style: solid; 
+    width: 27%;
+    border-width: 1px;
+    border-radius: 15%;
+    padding-bottom: 1em;
+    box-shadow: 0px 6px 5px #cab577;
+}
+
+.favourite-container-three{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    width: 25%;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 15%;
+    padding-bottom: 1em;
+    box-shadow: 0px 6px 5px #cab577;
+
+}
+
+
+.favourite-container-text{
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    overflow-wrap: break-word;
+} 
+.food-images{
+    border-radius: 20%;
+
+}
+
+.join-community{
+    display: flex; 
+    flex-flow: column;
+    align-items: center; 
+    align-content: center;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    color:  #85837d;
+    border-color: #c1502e; 
+    margin: 5%;
+    padding-top: 3%;
+    font-size: 0.85rem;
+    height: 15em;
+
+
+}
+.community-text{
+    display: flex; 
+    align-items: center; 
+    color: #85837d;
+}
+.contact-us{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    
+    
+}
+
+.contact-us-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+.contact-us-button{
+    display: flex;
+    flex-flow: row wrap; 
+    align-items: center; 
+    background-color: #cab577;
+    border-style: none;
+    color: #c1502e;
+    border-radius: 4px;
+    transition: 0.1s;
+    padding: 0 7px 0 7px;
+    box-shadow: 0px 6px 5px #cab577;
+   
+}
+.contact-us-button:hover {
+    
+    background: #c1502e;
+    border-radius: 4px;
+    transition: 0.1s;
+
+}
+
+.sign-up{
+    margin-left: 13%;
+    margin-top: 5px; 
+}
+.sign-up-text{
+    margin-right: 4%;
+    margin-top: 3px;
+
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #8b943b;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #c1502e;
+    margin: 5%;
+    padding-bottom: 35px;
+}
+
+
+.mobile-app {
+    display: flex;
+    flex-direction: column;
+}
+
+.community {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.impressum {
+    display: flex;
+    flex-direction: column;
+}  
+
+
+/**
+.footer-container-text-underline {
+    width: 50px;
+    height: 1px;
+} **/

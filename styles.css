@@ -1,0 +1,239 @@
+@charset "UTF-8";
+
+/*
+* Author: Henry , Charlie, Alejandra
+*/
+
+/* -------------------------------------------------------------- */
+/* Table of Contents
+-----------------------------------------------------------------
+
+/* -------------------------------------------------------------- */
+/* 01. Import Section
+----------------------------------------------------------------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap");
+
+/**-----------------------------------------------------**/
+/**--- Navbar--**/
+
+body {
+	margin: 0;
+}
+
+
+.nav {
+	display: flex;
+	width: auto;
+	height: 30px;
+	flex-direction: row;
+	border-bottom: 10px solid #c1502e;
+	font-family: ;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	background: white;
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+}
+
+li {
+	color: #fff;
+	background: #cab577;
+	display: block;
+	float: left;
+	padding: 1rem;
+	position: relative;
+	text-decoration: none;
+	transition-duration: 0.5s;
+}
+	
+li a {
+	color: #fff;
+}
+
+li:hover {
+	background: #cab577;
+	cursor: pointer;
+}
+
+ul li ul {
+	background: white;
+	visibility: hidden;
+	opacity: 0;
+	min-width: 5rem;
+	position: absolute;
+	transition: all 0.5s ease;
+	margin-top: 1rem;
+	left: 0;
+	display: none;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+	visibility: visible;
+	opacity: 1;
+	display: block;
+}
+
+ul li ul li {
+	clear: both;
+	width: 100%;
+}
+
+/* ---------------------------------- */
+/* Transparent Header
+------------------------------------- */
+#header-container.transparent-header {
+	position: absolute;
+	width: 100%;
+}
+
+.transparent-header-spacer { height: 82px; }
+
+.transparent-header #header {
+	background-color: transparent;
+	box-shadow: none;
+	border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.transparent-header #header .right-side { background-color: transparent; }
+
+
+
+/* Test video*/
+header {
+	position: relative;
+	background-color: black;
+	height: 75vh;
+	min-height: 25rem;
+	width: 100%;
+	overflow: hidden;
+  }
+  
+  header video {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: 0;
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+  }
+  
+  header .container {
+	position: relative;
+	z-index: 2;
+  }
+  
+  header .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	opacity: 0.5;
+	z-index: 1;
+  }
+  
+  @media (pointer: coarse) and (hover: none) {
+	header {
+	  background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+	}
+	header video {
+	  display: none;
+	}
+  }
+
+  /* Test vido ends*/
+
+
+/* ---------------------------------- */
+/* Photo Box
+------------------------------------- */
+.photo-box {
+	border-radius: 4px;
+	height: 360px;
+	display: block;
+	position: relative;
+	background-size: cover;
+	background-position: 100%;
+	box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+	transition: 0.4s;
+	margin: 20 0 25px 0;
+}
+
+.photo-box:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: #333;
+	opacity: 0.5;
+	border-radius: 4px;
+	transition: 0.4s;
+}
+
+.photo-box-content {
+	position: absolute;
+	bottom: 30px;
+	left: 30px;
+}
+
+.photo-box-content h3 {
+	color: #fff;
+	font-size: 20px;
+	line-height: 28px;
+}
+
+.photo-box-content span {
+	color: #333;
+	background: #fff;
+	border-radius: 10px;
+	font-size: 15px;
+	font-weight: 500;
+	padding:  4px 10px;
+	line-height: 20px;
+	margin-top: 20px;
+	display: inline-block;
+}
+
+/* Hover State */
+.photo-box:hover {
+	box-shadow: 0 4px 12px rgba(102,103,107,0.25);
+	transform: translateY(-10px);
+}
+
+.photo-box:hover:before {
+	background: #66676b;
+	opacity: 0.95;
+}
+
+/*--Map Container--*/
+
+.map-container-6{
+	overflow:hidden;
+	padding-bottom:56.25%;
+	position:relative;
+	height:0;
+	}
+	.map-container-6 iframe{
+	left:0;
+	top:0;
+	height:100%;
+	width:100%;
+	position:absolute;
+	}
